@@ -6,6 +6,17 @@ import { validate } from "../middleware/validate.js";
 import { generateToken } from "../utils/token.js";
 
 const router = Router();
+const AUTH_COOKIE_NAME = "token";
+
+function authCookieOptions(maxAge?: number) {
+  return {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax" as const,
+    path: "/",
+    ...(maxAge === undefined ? {} : { maxAge }),
+  };
+}
 
 router.post(
   "/register",
@@ -76,13 +87,23 @@ router.post(
       return res.status(401).json({ message: "Invalid credentials" });
     }
     const generatedToken = generateToken(user);
+    const maxAge = Math.max(0, generatedToken.expiresAt * 1000 - Date.now());
+    res.cookie(
+      AUTH_COOKIE_NAME,
+      generatedToken.token,
+      authCookieOptions(maxAge),
+    );
     res.json({
-      token: generatedToken.token,
       expires: generatedToken.expiresAt,
       user,
     });
   },
 );
+
+router.post("/logout", (_req: Request, res: Response) => {
+  res.clearCookie(AUTH_COOKIE_NAME, authCookieOptions());
+  res.status(204).end();
+});
 
 router.get("/me", authenticate, async (req: Request, res: Response) => {
   const user = await User.findById(req.user!._id);

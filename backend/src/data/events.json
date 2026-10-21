@@ -1,292 +1,322 @@
 [
-        {
-            "title": "Soccer Match",
-            "type": "game",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Baseball Game",
-            "type": "practice",
-            "date": "2024-07-02",
-            "fieldName": "Field 2",
-            "startTime": "14:00",
-            "endTime": "16:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Tennis Tournament",
-            "type": "practice",
-            "date": "2024-07-03",
-            "fieldName": "Field 1",
-            "startTime": "09:00",
-            "endTime": "11:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Soccer Match",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Evening Practice",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "11:00",
-            "endTime": "13:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Basketball Scrimmage",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 1",
-            "startTime": "13:00",
-            "endTime": "15:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Tennis Match",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 2",
-            "startTime": "14:00",
-            "endTime": "16:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Soccer Practice",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "15:00",
-            "endTime": "17:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Youth Training",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "13:00",
-            "endTime": "15:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Field Cleanup",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "15:00",
-            "endTime": "17:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Lacrosse Drills",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 2",
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Basketball Game",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 1",
-            "startTime": "11:00",
-            "endTime": "13:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Soccer Tournament",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 3",
-            "startTime": "14:00",
-            "endTime": "16:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Track Meet",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 2",
-            "startTime": "15:00",
-            "endTime": "17:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Volleyball Practice",
-            "type": "practice",
-            "date": "2024-07-01",
-            "fieldName": "Field 1",
-            "startTime": "13:00",
-            "endTime": "15:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Baseball Game",
-            "type": "practice",
-            "date": "2024-07-02",
-            "fieldName": "Field 2",
-            "startTime": "14:00",
-            "endTime": "16:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Batting Practice",
-            "type": "practice",
-            "date": "2024-07-02",
-            "fieldName": "Field 2",
-            "startTime": "15:00",
-            "endTime": "17:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Soccer Clinic",
-            "type": "practice",
-            "date": "2024-07-02",
-            "fieldName": "Field 1",
-            "startTime": "15:00",
-            "endTime": "17:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Field Inspection",
-            "type": "practice",
-            "date": "2024-07-02",
-            "fieldName": "Field 2",
-            "startTime": "17:00",
-            "endTime": "19:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Evening Baseball Practice",
-            "type": "practice",
-            "date": "2024-07-02",
-            "fieldName": "Field 2",
-            "startTime": "19:00",
-            "endTime": "21:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Tennis Tournament",
-            "type": "practice",
-            "date": "2024-07-03",
-            "fieldName": "Field 1",
-            "startTime": "09:00",
-            "endTime": "11:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Tennis Skills Clinic",
-            "type": "practice",
-            "date": "2024-07-03",
-            "fieldName": "Field 1",
-            "startTime": "10:30",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Soccer Warmup",
-            "type": "practice",
-            "date": "2024-07-03",
-            "fieldName": "Field 3",
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Junior Tennis",
-            "type": "practice",
-            "date": "2024-07-03",
-            "fieldName": "Field 1",
-            "startTime": "12:00",
-            "endTime": "14:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Pickleball Session",
-            "type": "practice",
-            "date": "2024-07-03",
-            "fieldName": "Field 1",
-            "startTime": "14:00",
-            "endTime": "16:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Rugby Training",
-            "type": "practice",
-            "date": "2024-07-04",
-            "fieldName": "Field 1",
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Community Game",
-            "type": "practice",
-            "date": "2024-07-04",
-            "fieldName": "Field 1",
-            "startTime": "11:00",
-            "endTime": "13:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Soccer Friendly",
-            "type": "practice",
-            "date": "2024-07-04",
-            "fieldName": "Field 2",
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "allDay": false,
-            "isApproved": "pending"
-        },
-        {
-            "title": "Track Practice",
-            "type": "practice",
-            "date": "2024-07-04",
-            "fieldName": "Field 1",
-            "startTime": "13:00",
-            "endTime": "15:00",
-            "allDay": false,
-            "isApproved": "pending"
-        }
-    ]
+    {
+        "title": "Soccer Match",
+        "type": "game",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Baseball Game",
+        "type": "practice",
+        "date": "2024-07-02",
+        "fieldName": "Field 2",
+        "startTime": "14:00",
+        "endTime": "16:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Tennis Tournament",
+        "type": "practice",
+        "date": "2024-07-03",
+        "fieldName": "Field 1",
+        "startTime": "09:00",
+        "endTime": "11:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Soccer Match",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Evening Practice",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "11:00",
+        "endTime": "13:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Basketball Scrimmage",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 1",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Tennis Match",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 2",
+        "startTime": "14:00",
+        "endTime": "16:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Soccer Practice",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Youth Training",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Field Cleanup",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Lacrosse Drills",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 2",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Basketball Game",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 1",
+        "startTime": "11:00",
+        "endTime": "13:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Soccer Tournament",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 3",
+        "startTime": "14:00",
+        "endTime": "16:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Track Meet",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 2",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Volleyball Practice",
+        "type": "practice",
+        "date": "2024-07-01",
+        "fieldName": "Field 1",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Baseball Game",
+        "type": "practice",
+        "date": "2024-07-02",
+        "fieldName": "Field 2",
+        "startTime": "14:00",
+        "endTime": "16:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Batting Practice",
+        "type": "practice",
+        "date": "2024-07-02",
+        "fieldName": "Field 2",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Soccer Clinic",
+        "type": "practice",
+        "date": "2024-07-02",
+        "fieldName": "Field 1",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Field Inspection",
+        "type": "practice",
+        "date": "2024-07-02",
+        "fieldName": "Field 2",
+        "startTime": "17:00",
+        "endTime": "19:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Evening Baseball Practice",
+        "type": "practice",
+        "date": "2024-07-02",
+        "fieldName": "Field 2",
+        "startTime": "19:00",
+        "endTime": "21:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Tennis Tournament",
+        "type": "practice",
+        "date": "2024-07-03",
+        "fieldName": "Field 1",
+        "startTime": "09:00",
+        "endTime": "11:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Tennis Skills Clinic",
+        "type": "practice",
+        "date": "2024-07-03",
+        "fieldName": "Field 1",
+        "startTime": "10:30",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Soccer Warmup",
+        "type": "practice",
+        "date": "2024-07-03",
+        "fieldName": "Field 3",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Junior Tennis",
+        "type": "practice",
+        "date": "2024-07-03",
+        "fieldName": "Field 1",
+        "startTime": "12:00",
+        "endTime": "14:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Pickleball Session",
+        "type": "practice",
+        "date": "2024-07-03",
+        "fieldName": "Field 1",
+        "startTime": "14:00",
+        "endTime": "16:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Rugby Training",
+        "type": "practice",
+        "date": "2024-07-04",
+        "fieldName": "Field 1",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Community Game",
+        "type": "practice",
+        "date": "2024-07-04",
+        "fieldName": "Field 1",
+        "startTime": "11:00",
+        "endTime": "13:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Soccer Friendly",
+        "type": "practice",
+        "date": "2024-07-04",
+        "fieldName": "Field 2",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    },
+    {
+        "title": "Track Practice",
+        "type": "practice",
+        "date": "2024-07-04",
+        "fieldName": "Field 1",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "allDay": false,
+        "isApproved": "pending",
+        "requestedBy": "6ad1926d17ea9affbf6039f3"
+    }
+]

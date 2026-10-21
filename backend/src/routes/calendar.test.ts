@@ -98,13 +98,18 @@ describe("calendar API", () => {
     });
 
     it("creates an event and returns the saved document", async () => {
-      const savedCalendar = new Calendar(calendarInput);
-      vi.spyOn(Calendar.prototype, "save").mockResolvedValue(savedCalendar);
+      const user = makeUser();
+      vi.spyOn(Calendar.prototype, "save").mockImplementation(async function () {
+        return this;
+      });
 
       const response = await request(app)
         .post("/api/calendar")
-        .set(withAuth())
-        .send(calendarInput);
+        .set(withAuth(user))
+        .send({
+          ...calendarInput,
+          requestedBy: new Types.ObjectId().toHexString(),
+        });
 
       expect(response.status).toBe(201);
       expect(response.type).toBe("application/json");
@@ -113,6 +118,7 @@ describe("calendar API", () => {
         type: "practice",
         startTime: "09:00",
         endTime: "10:00",
+        requestedBy: user._id.toHexString(),
         isApproved: "pending",
       });
     });

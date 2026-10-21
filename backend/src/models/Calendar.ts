@@ -7,6 +7,7 @@ interface ICalendar extends Document {
   startTime: string;
   endTime: string;
   allDay?: boolean;
+  requestedBy: Types.ObjectId;
   isApproved?: string;
   approvedBy?: Types.ObjectId;
   approvedAt?: Date;
@@ -23,6 +24,7 @@ const calendarSchema = new Schema<ICalendar>({
   isApproved: { type: String, default: "pending", enum: ["pending", "approved", "rejected"] },
   approvedBy: { type: Schema.Types.ObjectId, ref: "User" },
   approvedAt: { type: Date },
+  requestedBy: { type: Schema.Types.ObjectId, ref: "User", required: true },
   fieldId: { type: Schema.Types.ObjectId, ref: "Field", required: true }
 });
 

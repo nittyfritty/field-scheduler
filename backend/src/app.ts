@@ -1,4 +1,5 @@
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import express from "express";
 import morgan from "morgan";
 import calendarRoutes from "./routes/calendar.js";
@@ -14,6 +15,7 @@ if (process.env.NODE_ENV === "development") {
 
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/calendar", calendarRoutes);
 app.use("/api/admin", authenticate, requireAdmin, adminRoutes);

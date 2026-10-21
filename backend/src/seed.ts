@@ -1,7 +1,6 @@
 // Seed data from the data folder into the database for testing and development.
 import fs from "node:fs";
 import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
 import Field from "./models/Fields.js";
 import Calendar from "./models/Calendar.js";
 import { User } from "./models/User.js";
@@ -88,13 +87,10 @@ const seedData = async (): Promise<void> => {
           return;
         }
 
-        const saltRounds = 12;
-        const hashPassword = await bcrypt.hash(adminPassword, saltRounds);
-        
         const newAdmin = new User({
           name: process.env.ADMIN_NAME ?? "Admin",
           email: adminEmail,
-          password: hashPassword,
+          password: adminPassword,
           role: "admin",
           isApproved: true,
         });

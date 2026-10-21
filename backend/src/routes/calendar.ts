@@ -55,6 +55,11 @@ router.post(
   ]),
   async (req: Request, res: Response) => {
     const { date, title, type, startTime, endTime, fieldId } = req.body;
+    const requestedBy = req.user?._id;
+
+    if (!requestedBy) {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
 
     try {
       const approval =
@@ -71,6 +76,7 @@ router.post(
         type,
         startTime,
         endTime,
+        requestedBy,
         fieldId,
         ...approval,
       });

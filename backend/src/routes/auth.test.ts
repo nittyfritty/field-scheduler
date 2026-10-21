@@ -122,7 +122,8 @@ describe("auth API", () => {
       expect(response.body).toEqual({ message: "Invalid credentials" });
     });
 
-    it("returns a token and user for valid credentials", async () => {
+    it("sets an HttpOnly cookie and returns the user for valid credentials", async () => {
+      vi.stubEnv("NODE_ENV", "production");
       const user = makeUser();
       vi.spyOn(User, "findOne").mockResolvedValue(user);
       vi.spyOn(user, "comparePassword").mockResolvedValue(true);
@@ -136,10 +137,32 @@ describe("auth API", () => {
 
       expect(response.status).toBe(200);
       expect(response.type).toBe("application/json");
-      expect(response.body.token).toEqual(expect.any(String));
       expect(response.body.expires).toEqual(expect.any(Number));
       expect(response.body.user.email).toBe(registration.email);
       expect(response.body.user).not.toHaveProperty("password");
+      expect(response.body).not.toHaveProperty("token");
+      expect(response.headers["set-cookie"]).toEqual(
+        expect.arrayContaining([
+          expect.stringMatching(
+            /^token=[^;]+; Max-Age=\d+; Path=\/; Expires=.+; HttpOnly; Secure; SameSite=Lax$/,
+          ),
+        ]),
+      );
+    });
+  });
+
+  describe("POST /api/auth/logout", () => {
+    it("clears the authentication cookie", async () => {
+      const response = await request(app).post("/api/auth/logout");
+
+      expect(response.status).toBe(204);
+      expect(response.headers["set-cookie"]).toEqual(
+        expect.arrayContaining([
+          expect.stringMatching(
+            /^token=; Path=\/; Expires=.+; HttpOnly; SameSite=Lax$/,
+          ),
+        ]),
+      );
     });
   });
 
@@ -164,6 +187,26 @@ describe("auth API", () => {
         email: user.email,
       });
       expect(response.body).not.toHaveProperty("password");
+    });
+
+    it("authenticates requests with the HttpOnly cookie", async () => {
+      const user = makeUser();
+      vi.spyOn(User, "findById").mockResolvedValue(user);
+      const token = jwt.sign(
+        { id: user.id },
+        "auth-route-test-secret",
+        { expiresIn: "30m" },
+      );
+
+      const response = await request(app)
+        .get("/api/auth/me")
+        .set("Cookie", `token=${token}`);
+
+      expect(response.status).toBe(200);
+      expect(response.body).toMatchObject({
+        name: user.name,
+        email: user.email,
+      });
     });
 
     it("returns 404 when the authenticated user no longer exists", async () => {
